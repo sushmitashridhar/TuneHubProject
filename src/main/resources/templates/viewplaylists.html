@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VIEW PAYLISTS</title>
+<link rel=stylesheet type=text/css th:href="@{/viewplaylists.css}">
+</head>
+<body>
+	<table border=1>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>ID</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+		<tr th:each="p:${playlist}">
+	<!--  	<td th:text="${p.name}"></td> -->
+		<td th:text="${p.id}"></td>
+		<!-- to desplay all song id name link  -->
+	<!--	<td th:text="${p.songs}"></td> -->
+		<!-- to display only songname  -->
+	<!--	<td><span th:each="song:${p.songs}" th:text="${song.name} + ','"></span>
+		</td>   -->
+	<td>
+	<ul>
+	<li th:each="song:${p.songs}">
+	<span th:text="${song.name}"></span>
+	<audio controls><source th:src="${song.link}">
+	</audio>
+	</li>
+	</ul>
+	</td>
+		</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* CustomerHome.css */
+
+/* Overall page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Non-premium section styles */
+.non-premium {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.non-premium form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.non-premium form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Premium section styles */
+.premium {
+    margin-top: 20px;
+}
+
+.premium table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.premium th, .premium td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.premium th {
+    background-color: #f2f2f2;
+}
+
+.premium tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Audio player styles */
+audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .premium table {
+        font-size: 14px;
+    }
+}
+

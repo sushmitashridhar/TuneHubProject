@@ -1,0 +1,33 @@
+/* CSS for styling the heading */
+h1 {
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 24px; /* Font size */
+}
+
+/* CSS for styling the paragraph */
+p {
+    color: #666; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+}
+
+/* CSS for styling the buy button */
+.buy-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Cursor style */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+}
+
+/* CSS for styling the form container */
+#payment-form {
+    margin-top: 20px; /* Add space above the form */
+}
+
+/* Additional styles can be added based on your design requirements */
+
